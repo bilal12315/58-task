@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.block{
+			height: 100px;
+			width:100px;
+			background-color: red;
+			border:1px solid black;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Закрасить дивы используя цикл</h1>
+	<div class="row">	
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+	</div>
+	<button class="green">Сделать зелеными</button>
+	<button class="yellow">Сделать желтыми</button>
+	<button class="black">Сделать черными</button>
+<script type="text/javascript">
+	//6 задание
+	let blocks = document.querySelectorAll(".block")
+	
+
+	document.querySelector(".green").onclick = function(){
+		for(let i=0;i<5;i++){
+			blocks[i].style.backgroundColor = "green";
+		}
+	}
+	document.querySelector(".yellow").onclick = function(){
+		for(let i=0;i<5;i++){
+			blocks[i].style.backgroundColor = "yellow";
+		}
+	}
+	document.querySelector(".black").onclick = function(){
+		for(let i=0;i<5;i++){
+			blocks[i].style.backgroundColor = "black"
+		}
+	}
+</script>
+</body>
+</html>
